@@ -54,9 +54,7 @@ namespace Day1Assignment1
                     newStudent.LastN = txtLastN.Text;
                     newStudent.StudentYear = (YearofStudent)cboxYearS.SelectedItem;
                     newStudent.Gender = (Gender)cboxGenderS.SelectedValue;
-                //Student id = new Student();
-                //id.StudentID += Id_StudentID;
-                slist.Add(newStudent);
+                    slist.Add(newStudent);
                 }
                 else
                 {
