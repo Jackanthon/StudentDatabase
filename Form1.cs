@@ -31,9 +31,9 @@ namespace Day1Assignment1
             slist.Add(new Student() { SID = 6258, FirstN = "Joe", LastN = "Wright", Gender = Gender.Male, StudentYear = YearofStudent.Junior });
             slist.Add(new Student() { SID = 6527, FirstN = "Brook", LastN = "Allen", Gender = Gender.Female, StudentYear = YearofStudent.Softmore });
             slist.Add(new Student() { SID = 6560, FirstN = "Carly", LastN = "Smith", Gender = Gender.Other, StudentYear = YearofStudent.Freshman });
-            slist.Add(new Student() { SID = 6497, FirstN = "Parker", LastN = "Underwood", Gender = Gender.Male, StudentYear = YearofStudent.Senior });
-            slist.Add(new Student() { SID = 6497, FirstN = "Sarah", LastN = "Smith", Gender = Gender.Female, StudentYear = YearofStudent.Softmore });
-            slist.Add(new Student() { SID = 6497, FirstN = "Tim", LastN = "Corey", Gender = Gender.Male, StudentYear = YearofStudent.Freshman });
+            slist.Add(new Student() { SID = 6536, FirstN = "Parker", LastN = "Underwood", Gender = Gender.Male, StudentYear = YearofStudent.Senior });
+            slist.Add(new Student() { SID = 6521, FirstN = "Sarah", LastN = "Smith", Gender = Gender.Female, StudentYear = YearofStudent.Softmore });
+            slist.Add(new Student() { SID = 6342, FirstN = "Tim", LastN = "Corey", Gender = Gender.Male, StudentYear = YearofStudent.Freshman });
 
             gridStudents.DataSource = slist;
             cboxYearS.DataSource = Enum.GetValues(typeof(YearofStudent));
@@ -66,10 +66,6 @@ namespace Day1Assignment1
                 MessageBox.Show("Please enter valid ID.");
             }
             RefreshValues();
-        }
-        private void Id_StudentID(int studentID)
-        {
-            MessageBox.Show("Invalid ID");
         }
         private void RefreshValues()
         {
