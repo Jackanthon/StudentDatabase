@@ -13,8 +13,7 @@ namespace Day1Assignment1
 {
     public partial class Form1 : Form
     {
-        //ArrayList slist;
-                List<Student> slist = new List<Student>();
+        List<Student> slist = new List<Student>();
         public Form1()
         {
             InitializeComponent();
@@ -23,11 +22,7 @@ namespace Day1Assignment1
         private void Form1_Load(object sender, EventArgs e)
         {
             gridStudents.Visible = false;
-            //Out-dated code
-            //slist = new ArrayList();
-            //slist.Add(new Student(33456, firstn: "Sam", lastn: "Club", YearofStudent.Freshman, Gender.Other));
-            //slist.Add(new Student(33243, firstn: "Derrick", lastn: "Choma", YearofStudent.Senior, Gender.Male));
-            //slist.Add(new Student(33266, firstn: "Sarah", lastn: "Parker", YearofStudent.Junior, Gender.Female));
+            
             slist.Add(new Student() { SID = 6258, FirstN = "Joe", LastN = "Wright", Gender = Gender.Male, StudentYear = YearofStudent.Junior });
             slist.Add(new Student() { SID = 6527, FirstN = "Brook", LastN = "Allen", Gender = Gender.Female, StudentYear = YearofStudent.Softmore });
             slist.Add(new Student() { SID = 6560, FirstN = "Carly", LastN = "Smith", Gender = Gender.Other, StudentYear = YearofStudent.Freshman });
